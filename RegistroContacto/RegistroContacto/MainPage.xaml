@@ -3,25 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RegistroContacto.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+    <StackLayout Margin="20,35,20,20">
+        <Frame BackgroundColor="#2196F3" Margin="0,5,0,30" CornerRadius="0">
             <Label Text="Información del Usuario" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="Nombres del Usuario:"/>
-        <Entry x:Name="nombreUsuario"/>
+        <Label Text="Nombres del Usuario:" 
+               FontSize="Large"/>
+        <Entry x:Name="nombreUsuario"
+               FontSize="Large"/>
         
-        <Label Text="Apellidos del Usuario:"/>
-        <Entry x:Name="apellidoUsuario"/>
+        <Label Text="Apellidos del Usuario:"
+               FontSize="Large"/>
+        <Entry x:Name="apellidoUsuario"
+               FontSize="Large"/>
         
-        <Label Text="Edad:"/>
-        <Entry x:Name="edad"/>
+        <Label Text="Edad:"
+               FontSize="Large"/>
+        <Entry x:Name="edad"
+               FontSize="Large"
+               Keyboard="Numeric"/>
         
-        <Label Text="Correo Electronico"/>
-        <Entry Keyboard="Email" x:Name="correo"/>
+        <Label Text="Correo Electrónico"
+               FontSize="Large"/>
+        <Entry Keyboard="Email" x:Name="correo"
+               FontSize="Large"/>
 
         <Button Clicked="enviarInformacion_Clicked" 
                 x:Name="enviarInformacion" 
-                Text="Enviar Información"/>
+                Text="Enviar Información"
+                FontSize="Large"
+                BackgroundColor="Aqua"
+                BorderWidth="5"
+                CornerRadius="5"
+                WidthRequest="150"
+                HeightRequest="75" />
     </StackLayout>
 
 </ContentPage>

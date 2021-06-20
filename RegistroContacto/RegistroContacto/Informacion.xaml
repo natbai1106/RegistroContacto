@@ -3,10 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RegistroContacto.Informacion">
     <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="infnombre" />
-            <Label x:Name="infedad" />
-            <Label x:Name="infcorreo" />
+        <StackLayout Margin="10,10,10,290" HorizontalOptions="Center" HeightRequest="500" WidthRequest="500" >
+            <Label x:Name="infnombre"
+                   FontSize="Large"
+                   Margin="20,75,20,20"
+                   FontAttributes="Bold" />
+            <Label x:Name="infedad"
+                   FontSize="Large"
+                   Margin="20,35,20,20"
+                   FontAttributes="Bold"/>
+            <Label x:Name="infcorreo"
+                   FontSize="Large" 
+                   Margin="20,35,20,20"
+                   FontAttributes="Bold"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

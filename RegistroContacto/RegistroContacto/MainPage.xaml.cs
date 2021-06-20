@@ -17,7 +17,7 @@ namespace RegistroContacto
 
         private async void enviarInformacion_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Informacion(nombreUsuario.Text, apellidoUsuario.Text,edad.Text,correo.Text));
+            await Navigation.PushAsync(new Informacion(nombreUsuario.Text, apellidoUsuario.Text, edad.Text, correo.Text));
         }
     }
 }
